@@ -1,0 +1,479 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* __________________________________________________________________________________
+ fuentes*/
+/* fuente 1 bebas neve */
+.font_1{
+    font-family: 'Bebas Neue', cursive;
+}/* fuente 2 roboto */
+.font_2{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+
+/* _____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________ */
+/* menu */
+
+.siderbar_men{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background:white;
+    transition: all 0.6s;
+}
+
+#margen_arriba{
+    padding-top: 50px;
+}
+
+
+#let_gris_menu{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+#let_gris_menu a{
+    color: #666666;
+}
+
+
+.siderbar_men ul{
+    margin: 0px 30px;
+    padding: 0px;
+    list-style: none;
+    /* background: red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px
+}
+.siderbar_men ul li {
+    /* outline: 1px solid #2a2a2a; */
+    
+    display: flex;
+    /* background: yellowgreen; */
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.siderbar_men ul li.hover{
+    background: #444444;
+}
+.siderbar_men ul li a{
+    text-decoration: none;
+}
+
+
+/* _______________________________________________________________________________________________________
+_______________________________________________________________________________________________________ 
+aciion boton*/
+
+.siderbar_contenido{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #eeeeee;
+    padding: 30px;
+    transition: all 0.6s;
+}
+
+.siderbar_menu_bar{
+    cursor: pointer;
+}
+
+.abrir{
+    
+    transform: translateX(100%);
+    /* transition: all 0.3s; */
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ________________________________________________________________________________________________
+________________________________________________________________________________________________
+_______________________________________________________________________________________________ */
+
+/* barras negra */
+#barra_neg{
+    position: relative; z-index:30;
+    background-color: #1a1a1a;
+
+}
+#barra_neg ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+ 
+}
+#barra_neg ul li{
+    display: inline-block;
+  
+}
+#barra_neg ul li a{
+    color: #e6e6e6;
+    /* hace que cubra todo el espacio de esta id y se pueda presionar sobre ello */
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+/* color al pasar el mouse */
+#barra_neg ul li a:hover{
+    /* background-color: green; */
+    background-color: indianred;
+    color: gray;
+}
+
+.linea{
+    border-left: 1px solid  #e6e6e6;
+    height: 10px;
+    display: inline-block;
+    padding: 0px;
+
+    /* posicon absoluto es sobre toda la pantalla y realitivo como normalmente funciona cualquier elemnto */
+    position: relative;
+    /* posicion horizontal sobre contenedor: */
+    left: 0%;
+    /* posicion vertical sobre contenedor */
+    top: 0; 
+}
+
+/* ______________________________________________________________________________________________ */
+/* barra navegacion principal */
+#barra_nav{
+    background-color: white;
+    display: flex;
+    display: block;
+    padding: 10px; 
+
+    /* elementos para hacer la barra flotante */
+    /* position: fixed; */
+    left: 0px;
+    top: 0px;
+    position: relative; z-index:20;
+    /* z-index:;  */
+    box-shadow: 5px 5px 8px  #e6e6e6;
+}
+
+#cont_barra{
+
+    margin: 0px;
+    padding: 15px;
+  
+}
+
+#flot_der{
+    float: right;
+    padding: 5px 13px;
+}
+
+________________________________________________________________________________________________________
+/* ___________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+formulario */
+
+
+.fondo_formulario{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+   
+    
+}
+
+.form_registro{
+    width: 400px;
+    background: #9e9e9e;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: black;
+    box-shadow: 7px 7px 30px #111111;
+}
+
+.form_registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;  
+}
+
+.controls{
+    width: 100px;
+    background: blue;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.form_registro p{
+    
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form_registro a{
+    color: wheat;
+    text-decoration: none;
+    
+    /* centrar verticalmente */
+    line-height: 40px;
+
+}
+.form_registro a:hover{
+    color: wheat;
+    text-decoration: none;
+
+}
+
+.botons{
+    width: 100%;
+    background: gray;
+    border: none;
+
+    padding: 12px;
+    color: white;
+    margin: 16px 0px;
+    font-size: 16px;
+
+}
+
+
+
+/* _____________________________________________________________________________________________________ */
+/* ___________________________________________________________________________________________________
+_____________________________________________________________________________________________________ */
+
+/* section */
+
+#h_m_k{
+    text-align: center;
+}
+
+#h_m_k ul{
+
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-family:'Bebas Neue', cursive;
+
+}
+
+#h_m_k ul li {
+    display: inline-blockfle;
+
+}
+
+#h_m_k ul li a{
+
+    /* display: block; */
+    text-decoration: none;
+    padding: 8px;
+}
+
+
+
+
+.descripcion{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
+    margin: 0px 20px;
+    margin-bottom: 10px;
+}
+
+#sec_1{
+    justify-content: center;
+    display: flex;
+
+}
+
+.btn{
+  
+    background: #1a1a1a;
+    margin: 0px;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 40px;
+}
+
+/* seccion 2 */
+
+.h3_t{
+    margin: 0px;
+    margin-left: 15px;
+    font-family: 'Bebas Neue', cursive;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.cont_pro_nue{
+    width: 200px;
+    background-color: white;
+}
+
+.cont_pro_nue div{
+    margin: 0px;
+    padding: 0px;
+    width: 180px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.cont_pro_nue div h4{
+    font-family: 'Roboto', sans-serif;
+}
+
+#col_g{
+    color: #666666;
+}
+
+.txt_p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:9px;
+    color: crimson;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+/* _____________________________________________________________________________________________________
+_____________________________________________________________________________________________________
+_____________________________________________________________________________________________________
+footer */
+
+#cont_footer{
+    background-color: #1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    color: #e6e6e6;
+    /* display: flex
+    text-decoration: none; */
+    padding-top: 20px;
+}
+
+#lug_ico{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ico_red{
+    margin-right: 10px;
+}
+#ico_red a{
+    margin-left: 5px;
+}
+
+
+#cont_footer ul{ 
+    list-style: none;
+    color: #666666;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+
+}
+
+#lug{
+
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+    font-size: 11px;
+    margin: 0px;
+    
+   
+
+}
+
+#lug:hover{
+    background: #666666;
+}
+
+
+#tienda_rop_onl{
+    font-family: 'Roboto', sans-serif;
+    color: #666666;
+    font-size: 8px;
+    margin-left: 15px;
+}
+
+#cont_footer ul li a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #e6e6e6;
+    font-size: 9px;
+    margin-left: 15px;
+    
+}
+
+#footer_barra_fin{
+    margin: 0px;
+    padding: 0px;
+    background:white;
+    border-radius: 25px 25px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
+    font-size: 13px;
+    text-align: center;
+}
+
+#footer_barra_fin h4{
+    font-size: 11px
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
